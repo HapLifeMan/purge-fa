@@ -1,9 +1,16 @@
 # Purge-FA
+[![Downloads](https://img.shields.io/npm/dt/purge-fa.svg)](https://www.npmjs.com/package/purge-fa)
+[![Realease](https://img.shields.io/npm/v/purge-fa.svg)](https://github.com/HapLifeMan/purge-fa/releases)
+[![License](https://img.shields.io/npm/l/purge-fa.svg)](https://github.com/HapLifeMan/purge-fa/blob/master/LICENSE)
 
 Remove your unused FontAwesome JS icons.
 
+```
+npm install purge-fa
+```
+
 Command line only for now:
-```js
+```
 purge-fa <content> <js> <output>
 ```
 
