@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+let fs    = require('fs')
+let write = require('write')
+let glob  = require('glob')
+var purge = require("../lib/purge-fa.js")
+
+purge(process.argv[2], process.argv[3], process.argv[4])
