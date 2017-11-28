@@ -11,7 +11,7 @@ npm install purge-fa
 
 Command line only for now:
 ```
-purge-fa <content> <js> <output>
+./bin/purge-fa <content> <js> <output>
 ```
 
 - `content`: folder that contains your files to search icons in
