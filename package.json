@@ -1,6 +1,6 @@
 {
   "name": "purge-fa",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Purge all unused FontAwesome icons to reduce files.",
   "main": "./lib/purge-fa.js",
   "scripts": {
