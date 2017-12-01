@@ -2,6 +2,28 @@
 let fs    = require('fs')
 let write = require('write')
 let glob  = require('glob')
+var yargs = require("yargs")
 var purge = require("../lib/purge-fa.js")
 
-purge(process.argv[2], process.argv[3], process.argv[4])
+var argv = yargs
+    .usage("$0 -c <content> -s <sources> -o <output> [options]")
+    .option("w", {
+        alias: "whitelist",
+        description: "List of icons that should not be removed",
+        type: "array",
+        default: []
+    })
+    .help()
+    .alias("h", "help")
+    .version()
+    .alias("v", "version")
+    .argv
+
+if(!argv.c || !argv.s || !argv.o) {
+
+    console.log('[WARNING] Missing content, sources or output! See usages with help command.')
+    return
+
+}
+
+purge(argv.c, argv.s, argv.o, argv.w)

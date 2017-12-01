@@ -10,7 +10,9 @@
   "dependencies": {
     "glob": "^7.1.2",
     "path": "^0.12.7",
-    "write": "^1.0.3"
+    "write": "^1.0.3",
+    "cwd": "^0.10.0",
+    "yargs": "^10.0.3"
   },
   "repository": {
     "type": "git",
