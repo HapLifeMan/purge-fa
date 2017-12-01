@@ -4,7 +4,7 @@
   "description": "Purge all unused FontAwesome icons to reduce files.",
   "main": "./lib/purge-fa.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./bin/purge-fa -c \"src/html/**/*.html\" -s src/js/ -o dist/"
   },
   "license": "MIT",
   "dependencies": {
